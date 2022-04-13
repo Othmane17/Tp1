@@ -3,6 +3,6 @@
 def hello():
     """
     >>> hello()
-    'Hello world'
+    'New hello world'
     """
-    return "Hello world"
+    return "New hello world"
