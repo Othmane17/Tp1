@@ -37,7 +37,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        python: [3.8., 3.9., 3.10.]
+        python: ["3.8", "3.9", "3.10"]
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
@@ -109,6 +109,5 @@ jobs:
       - name: Statuscode
         run: |
           pip install requests
-          python3 -c "import requests; exit(1) if requests.get('https://excelia-tp-1.herokuapp.com').status_code !=200 else exit(0)"       
- 
-    
+          python3 -c "import requests; exit(1) if requests.get('https://excelia-tp-1.herokuapp.com').status_code !=200 else exit(0)"
+       
