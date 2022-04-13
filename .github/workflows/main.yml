@@ -57,7 +57,7 @@ jobs:
   deploy:
     needs: test
     runs-on: ubuntu-latest
-    if: ${github.ref_name == 'main'}}
+    if: ${{github.ref_name == 'main'}}
     steps:
       - name: Chekout repository
         uses: actions/checkout@v2
@@ -71,7 +71,7 @@ jobs:
   deploy_dev:
     needs: test
     runs-on: ubuntu-latest
-    if: ${github.ref_name == 'dev'}}
+    if: ${{github.ref_name == 'dev'}}
     steps:
       - name: Chekout repository
         uses: actions/checkout@v2
